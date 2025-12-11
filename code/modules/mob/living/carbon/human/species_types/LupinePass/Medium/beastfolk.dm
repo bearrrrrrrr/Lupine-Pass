@@ -10,18 +10,6 @@
 	little in common with each other<br>\
 	(+1 Constitution, +1 Perception)"
 
-	expanded_desc = "Wild-kins are a highly diverse and varied group of people, the majority of which are descendants of the \
-	first followers of Dendor who rejected civilization in favour of the deep forests. However, some came from \
-	magical anomalies or curses, Divine or otherwise. \
-	<br><br> \ Their bloodlines were blessed by Dendor for their ancestor&#39;s devotion \
-	and this is reflected in their appearance. Some descendants of the first Dendorite wild-kins, \
-	especially those not as devoted to the ways of Dendor and filled \
-	with wanderlust, emerged from their remote communities to embrace the civilization their ancestors had once rejected. \
-	<br><br> \
-	At first, they faced discrimination from people wary of their abnormal appearances. Yet, their appearance was a blessing \
-	from Dendor, and the clergy of the Ten made this known throughout the lands of the faithful. Wild-kins are now fully \
-	accepted, with many even holding titles of landed nobility. However, there is still an air of distrust and uncertainty \
-	surrounding them, especially for those who acquired their features during life rather than through birth."
 
 	default_color = "444"
 	species_traits = list(
@@ -158,11 +146,11 @@
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
-/datum/species/beastman /on_species_loss(mob/living/carbon/C)
+/datum/species/beastman/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 
-/datum/species/beastman /check_roundstart_eligible()
+/datum/species/beastman/check_roundstart_eligible()
 	return TRUE
 
 /datum/species/beastman /qualifies_for_rank(rank, list/features)

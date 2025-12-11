@@ -5,8 +5,9 @@
 	name = "Verminvolk"
 	id = "anthromorphsmall"
 	desc = "<b>Verminvolk</b><br>\
-	A race akin to wild-kin, except afflicted with significantly smaller stature. \
-	A bit less respected than their kin due to their closer resemblance to vermin, like the dichotomy between Kobold and Sissean.<br>\
+	A race akin to beast-folk, except afflicted with significantly smaller stature. \
+	This allows them to squeeze into places their larger kin cannot. \
+	A bit less respected than their kin due to their shorter stature, like the dichotomy between Kobold and Sissean.<br>\
 	(+1 Speed, Keen Ears Trait, Small Size)"
 	var/mob_size = MOB_SIZE_SMALL
 	expanded_desc = "A race akin to wild-kin, except afflicted with significantly smaller stature. \

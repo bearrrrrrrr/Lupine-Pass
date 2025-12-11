@@ -130,7 +130,7 @@
 	)
 
 /datum/species/akula/check_roundstart_eligible()
-	return FALSE
+	return TRUE
 
 /datum/species/akula/qualifies_for_rank(rank, list/features)
 	return TRUE

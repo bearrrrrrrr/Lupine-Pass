@@ -5,25 +5,14 @@
 	name = "Lupian"
 	id = "lupian"
 	desc = "<b>Lupian</b><br>\
-	Lupians are the sons and daughters of Noc. They are a volf-like people hailing from the Northern Regions of the world. \
-	They are resilient, cunning and fight ready creachures capable of surviving the north thanks to their rugged pelts, \
-	sharp teeth and deep-rooted spirit of community. They are very dutiful individuals and make fantastic and fearsome \
-	warriors to those who earn their loyalty. Thanks to their pack minded nature they are slow to trust the other races \
-	but form deep connections with those they do. In recent years they have been driven from the forests by unrest and the \
-	inevitable spread of the rot and pressed into cohabitation with races they'd deem lesser.<br>\
-	(+1 Constitution, +1 Intelligence, Sleuth Trait)"
-	expanded_desc = "Lupians live under elective monarchies, forms of feudalism where the king of a pack is chosen from, and by, the military council. \
-	The leader of the pack is a philosopher king, a paragon of virtue and one who should inspire awe and loyalty among the population \
-	while the real power is held by the military leadership. Should a king fail his people it is not uncommon for the entire kingdom \
-	to fall into disarray as law and order begin to break down, for many Lupians see it a disgrace to themselves to follow a king who \
-	appears weak. Similarly, most Lupians uphold an image of pride and toughness, it is only in the presence of someone who appears \
-	stronger do they bend the knee. To become a leader is a constant challenge to maintain. \
-	<br><br> \
-	Vakran was once the largest of the pack-nations, the capital of Lupian civilization. After the King sequestered himself away under \
-	insurmountable stress and went into hiding, it was revealed weeks later that he was poisoned by one of his sons. This plunged the \
-	nation states under the Vakran name into chaos. Vassals left, either becoming free or aligning themselves with the neighboring \
-	Frostfell or Felsaad, while others faced internal strife, civils wars between those who believed the Vakran name still held strong, \
-	and those who saw the crown tainted, even the military council decimated itself between duels and the pitting of coups."
+	Lupians are a raiding meritocratic race. They are a volf-like people hailing from the Northern Regions of the world. \
+	They are resilient, powerful and fight ready creachures capable of surviving the north thanks to their rugged pelts, \
+	sharp teeth and deep-rooted culture of superiority. They are very dutiful individuals and make fantastic and fearsome \
+	warriors to those who earn their loyalty. Thanks to their self proclaimed racial superiority, they see no issue \
+	with enslaving and raiding the other races. However they are not stupid and are capable of negotiating deals \
+	and trades with other races that they deem profitable.<br>\
+	(+1 Constitution, +1 Strength, Sleuth Trait)"
+
 	skin_tone_wording = "Ascendance"
 	species_traits = list(
 		MUTCOLORS,
@@ -56,7 +45,7 @@
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
 	inherent_traits = list(TRAIT_SLEUTH)
-	race_bonus = list(STAT_INTELLIGENCE = 1, STAT_CONSTITUTION = 1)
+	race_bonus = list(STAT_INTELLIGENCE = 1, STAT_STRENGTH = 1)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
