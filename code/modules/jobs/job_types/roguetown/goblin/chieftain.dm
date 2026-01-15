@@ -1,6 +1,6 @@
 
 /datum/job/roguetown/goblinking
-	title = "Goblin King"
+	title = TITLE_DEEPDWELLER_CHIEFTAIN
 	flag = GOBLINKING
 	department_flag = GOBLIN
 	faction = "Station"
@@ -9,7 +9,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list()
 	allowed_patrons = list(/datum/patron/inhumen/graggar)
-	tutorial = "Goblin King is a fatty lazy pig who wishes to do nothing but eat apple pies and fart while sitting on his stone throne."
+	tutorial = "The deepdweller Chieftain is a fatty lazy pig who wishes to do nothing but eat apple pies and fart while sitting on his stone throne."
 	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/goblinking
 
@@ -37,14 +37,14 @@
 
 /mob/living/carbon/human/proc/goblinannouncement()
 	set name = "Announcement"
-	set category = "Goblin King"
+	set category = "Deepdweller"
 	if(stat)
 		return
 	var/inputty = input("Make an announcement", "ROGUETOWN") as text|null
 	if(inputty)
 		if(!istype(get_area(src), /area/rogue/indoors/shelter/mountains/decap))
-			to_chat(src, span_warning("I need to do this from the Goblin Kingdom."))
+			to_chat(src, span_warning("I need to do this from the Deepdweller Village."))
 			return FALSE
-		priority_announce("[inputty]", title = "The Goblin King Squeals", sound = 'sound/misc/dun.ogg', sender = src)
+		priority_announce("[inputty]", title = "The Deepdweller Chief Squeals", sound = 'sound/misc/dun.ogg', sender = src)
 
 

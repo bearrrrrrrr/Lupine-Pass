@@ -429,7 +429,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 //goblin
 
 /obj/effect/landmark/start/goblinking
-	name = "Goblin King"
+	name = TITLE_DEEPDWELLER_CHIEFTAIN
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/goblincook
