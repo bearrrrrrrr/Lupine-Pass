@@ -349,7 +349,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/prisonerb
-	name = "Prisoner (Bog)"
+	name = TITLE_DEEPDWELLER_SLAVE
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/hostage
@@ -441,7 +441,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/goblinsmith
-	name = "Goblin Smith"
+	name = TITLE_DEEPDWELLER_SMITH
 	icon_state = "arrow"
 
 //Antagonist spawns

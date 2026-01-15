@@ -1,5 +1,5 @@
 /datum/job/roguetown/goblinsmith
-	title = "Goblin Smith"
+	title = TITLE_DEEPDWELLER_SMITH
 	flag = GOBLINSMITH
 	department_flag = GOBLIN
 	faction = "Station"
