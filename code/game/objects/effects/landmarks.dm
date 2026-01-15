@@ -433,7 +433,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/goblincook
-	name = "Goblin Cook"
+	name = TITLE_DEEPDWELLER_STOCKMASTER
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/goblinguard
