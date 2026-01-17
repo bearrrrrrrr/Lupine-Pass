@@ -7,7 +7,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list()
+	allowed_races = list(RACES_DEEPDWELLERS)
 	allowed_patrons = list(/datum/patron/inhumen/graggar)
 	tutorial = "The deepdweller Chieftain is a fatty lazy pig who wishes to do nothing but eat apple pies and fart while sitting on his stone throne."
 	whitelist_req = FALSE
