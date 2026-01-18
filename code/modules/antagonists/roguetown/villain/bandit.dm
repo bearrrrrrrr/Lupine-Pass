@@ -1,10 +1,10 @@
 /datum/antagonist/bandit
-	name = "Bandit"
+	name = TITLE_RAIDER_NOMAD
 	roundend_category = "bandits"
-	antagpanel_category = "Bandit"
+	antagpanel_category = "Raiders"
 	job_rank = ROLE_BANDIT
 	antag_hud_type = ANTAG_HUD_TRAITOR
-	antag_hud_name = "bandit"
+	antag_hud_name = "Raider Nomad"
 	confess_lines = list(
 		"FREEDOM!!!",
 		"I WILL NOT LIVE IN YOUR WALLS!",
@@ -19,7 +19,7 @@
 		return span_boldnotice("Another free man. My ally.")
 
 /datum/antagonist/bandit/on_gain()
-	owner.special_role = "Bandit"
+	owner.special_role = TITLE_RAIDER_NOMAD
 	//owner.assigned_role = "Bandit"
 	forge_objectives()
 	. = ..()
@@ -49,7 +49,7 @@
 	owner.unknow_all_people()
 	for(var/datum/mind/MF in get_minds())
 		owner.become_unknown_to(MF)
-	for(var/datum/mind/MF in get_minds("Bandit"))
+	for(var/datum/mind/MF in get_minds(TITLE_RAIDER_NOMAD))
 		owner.i_know_person(MF)
 		owner.person_knows_me(MF)
 

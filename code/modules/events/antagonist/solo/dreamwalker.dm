@@ -33,7 +33,7 @@
 		"Marshal",
 		"Bishop",
 		"Martyr",
-		"Bandit",
+		TITLE_RAIDER_NOMAD,
 		"Prince",
 		"Princess",
 		"Hand",

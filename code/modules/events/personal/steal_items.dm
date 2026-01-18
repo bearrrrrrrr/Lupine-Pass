@@ -22,7 +22,7 @@
 			continue
 		if(!H.patron || !istype(H.patron, /datum/patron/inhumen/matthios))
 			continue
-		if(istype(H.mind?.assigned_role, /datum/job/roguetown/bandit) || H.job == "Bandit")
+		if(istype(H.mind?.assigned_role, /datum/job/roguetown/bandit) || H.job == TITLE_RAIDER_NOMAD)
 			continue
 		if(H.get_skill_level(/datum/skill/misc/stealing) < 2)
 			continue
@@ -38,7 +38,7 @@
 			continue
 		if(!human_mob.patron || !istype(human_mob.patron, /datum/patron/inhumen/matthios))
 			continue
-		if(istype(human_mob.mind?.assigned_role, /datum/job/roguetown/bandit) || human_mob.job == "Bandit")
+		if(istype(human_mob.mind?.assigned_role, /datum/job/roguetown/bandit) || human_mob.job == TITLE_RAIDER_NOMAD)
 			continue
 		if(human_mob.get_skill_level(/datum/skill/misc/stealing) < 2)
 			continue

@@ -960,7 +960,7 @@
 /mob/living/proc/get_villain_text(mob/examiner)
 	var/villain_text
 	if(mind)
-		if(mind.special_role == "Bandit")
+		if(mind.special_role == TITLE_RAIDER_NOMAD)
 			if(HAS_TRAIT(examiner, TRAIT_COMMIE))
 				villain_text = span_notice("Free man!")
 			if(HAS_TRAIT(src,TRAIT_KNOWNCRIMINAL))

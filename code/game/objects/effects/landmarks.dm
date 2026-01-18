@@ -84,9 +84,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/banditlate
-	name = "Bandit"
+	name = TITLE_RAIDER_NOMAD
 	icon_state = "arrow"
-	jobspawn_override = list("Bandit")
+	jobspawn_override = list(TITLE_RAIDER_NOMAD)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/bogguardlate
@@ -465,10 +465,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	GLOB.nukeop_start += loc
 
 /obj/effect/landmark/start/bandit
-	name = "bandit"
+	name = TITLE_RAIDER_NOMAD
 	icon = 'icons/mob/landmarks.dmi'
 	icon_state = "arrow"
-	jobspawn_override = list("Bandit")
+	jobspawn_override = list(TITLE_RAIDER_NOMAD)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/bandit/Initialize()

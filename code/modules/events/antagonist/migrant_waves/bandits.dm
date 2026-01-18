@@ -14,7 +14,7 @@
 	)
 
 /datum/round_event/migrant_wave/bandits/start()
-	var/datum/job/bandit_job = SSjob.GetJob("Bandit")
+	var/datum/job/bandit_job = SSjob.GetJob(TITLE_RAIDER_NOMAD)
 	bandit_job.total_positions = min(bandit_job.total_positions + 5, 10)
 	bandit_job.spawn_positions = min(bandit_job.spawn_positions + 5, 10)
 	if(bandit_job.total_positions < 6) // Not at max capacity, increasing goal.

@@ -57,7 +57,7 @@
 	var/leader = FALSE
 
 /datum/round_event/antagonist/solo/bandits/start()
-	var/datum/job/bandit_job = SSjob.GetJob("Bandit")
+	var/datum/job/bandit_job = SSjob.GetJob(TITLE_RAIDER_NOMAD)
 	bandit_job.total_positions = length(setup_minds)
 	bandit_job.spawn_positions = length(setup_minds)
 	SSmapping.retainer.bandit_goal = rand(200,400) + (length(setup_minds) * rand(200,400))
@@ -65,7 +65,7 @@
 		var/datum/job/J = SSjob.GetJob(antag_mind.current?.job)
 		J?.current_positions = max(J?.current_positions-1, 0)
 		antag_mind.current.unequip_everything()
-		SSjob.AssignRole(antag_mind.current, "Bandit")
+		SSjob.AssignRole(antag_mind.current, TITLE_RAIDER_NOMAD)
 		SSmapping.retainer.bandits |= antag_mind.current
 		antag_mind.add_antag_datum(/datum/antagonist/bandit)
 

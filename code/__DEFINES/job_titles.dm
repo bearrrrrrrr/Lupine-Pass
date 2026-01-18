@@ -5,6 +5,7 @@
 
 
 #define TITLE_THRALL "Thrall"
+#define TITLE_RAIDER_NOMAD "Raider Nomad"
 
 //Deepdwellers
 #define TITLE_DEEPDWELLER_CHIEFTAIN "Deepdweller Chieftain"

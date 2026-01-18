@@ -38,7 +38,7 @@
 		"Martyr",
 		"Templar",
 		"Councillor",
-		"Bandit",
+		TITLE_RAIDER_NOMAD,
 		"Prince",
 		"Princess",
 		"Hand",

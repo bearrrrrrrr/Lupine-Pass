@@ -35,7 +35,7 @@
 		"Acolyte",
 		"Martyr",
 		"Templar",
-		"Bandit",
+		TITLE_RAIDER_NOMAD,
 		"Prince",
 		"Princess",
 		"Hand",
