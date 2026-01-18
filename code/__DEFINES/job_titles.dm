@@ -20,9 +20,9 @@
 #define TITLE_RAIDER_NOMAD "Raider Nomad"
 
 //Hamlet
-#define TITLE_BURGMEISTER "Burgmeister" //1 Veteran
+#define TITLE_BURGMEISTER "Burgmeister"
 #define TITLE_HAMLET_SMITH "Hamlet Smith" //1 Guildmaster
 #define TITLE_PRIEST "Priest" //1 Acolyte
-#define TITLE_TAPSTER "Tapster" //1 Bath Attendant
+#define TITLE_TAPSTER "Tapster"
 #define TITLE_SHIPS_CAPTAIN "Ship's Captain"
 #define TITLE_SAILOR "Sailor" //2 Mercenary

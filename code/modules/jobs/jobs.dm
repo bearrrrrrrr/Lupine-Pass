@@ -127,7 +127,7 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Lumberjack",
 	"Towner",
 	"Tapster",
-	"Bathhouse Attendant",
+	TITLE_TAPSTER,
 	"Prisoner",
 	"Beggar",
 	"Adventurer",

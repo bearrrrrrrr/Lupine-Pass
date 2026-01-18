@@ -1,11 +1,10 @@
 /datum/job/roguetown/nightmaiden
-	title = "Bathhouse Attendant"
-	f_title = "Bathhouse Attendant"
+	title = TITLE_TAPSTER
 	flag = WENCH
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 1
+	spawn_positions = 1
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
@@ -41,7 +40,7 @@
 		H.become_blind("advsetup") // Classes are for aesthetic clothing only, mechanically they're identical.
 
 /datum/outfit/job/roguetown/nightmaiden
-	name = "Bathhouse Attendant"
+	name = TITLE_TAPSTER
 	// This is just a base outfit, the actual outfits are defined in the advclasses
 
 /datum/advclass/nightmaiden
