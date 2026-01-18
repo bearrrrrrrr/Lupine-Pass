@@ -18,7 +18,7 @@
 		"Marshal",
 		"Sergeant",
 		"Steward",
-		"Court Magician"
+		TITLE_VALA
 	)
 
 	base_antags = 1

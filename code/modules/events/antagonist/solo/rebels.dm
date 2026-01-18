@@ -51,7 +51,7 @@
 		"Knight",
 		"Dame",
 		"Knight Captain",
-		"Court Magician",
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",

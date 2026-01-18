@@ -57,7 +57,7 @@
 		/area/rogue/indoors/town/dwarfin = list(TITLE_HAMLET_SMITH, "Guildsman"),
 		/area/rogue/indoors/town/shop = list("Merchant", "Shophand"),
 		/area/rogue/indoors/town/manor = list("Councillor", "Nobleman", "Hand", "Knight Captain", "Marshal", "Steward", "Clerk", "Head Mage", "Duke"),
-		/area/rogue/indoors/town/magician = list("Court Magician", "Magicians Associate"),
+		/area/rogue/indoors/town/magician = list(TITLE_VALA, "Magicians Associate"),
 		/area/rogue/indoors/town = list("Guild Handler")
 	)
 	return area_jobs[area_type] || list("Town Elder", "Steward", "Merchant")

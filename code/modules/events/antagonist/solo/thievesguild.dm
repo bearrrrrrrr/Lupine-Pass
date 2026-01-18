@@ -35,7 +35,7 @@
 		"Captain",
 		"Archivist",
 		"Knight",
-		"Court Magician",
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Warden",

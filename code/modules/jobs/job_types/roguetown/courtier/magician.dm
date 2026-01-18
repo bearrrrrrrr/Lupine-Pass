@@ -1,5 +1,5 @@
 /datum/job/roguetown/magician
-	title = "Court Magician"
+	title = TITLE_VALA
 	flag = WIZARD
 	department_flag = COURTIERS
 	selection_color = JCOLOR_COURTIER
@@ -7,7 +7,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_NO_CONSTRUCT		//Nobility, no construct
+	allowed_races = RACES_KEEP
 	allowed_sexes = list(MALE, FEMALE)
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	display_order = JDO_MAGICIAN
@@ -30,7 +30,7 @@
 	)
 
 /datum/advclass/courtmage
-	name = "Court Magician"
+	name = TITLE_VALA
 	tutorial = "Your creed is one dedicated to the conquering of the arcane arts and the constant thrill of knowledge. \
 		You owe your life to the Lord, for it was his coin that allowed you to continue your studies in these dark times. \
 		In return, you have proven time and time again as justicar and trusted advisor to their reign."

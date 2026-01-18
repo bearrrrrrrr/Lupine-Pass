@@ -54,7 +54,7 @@
 		"Archivist",
 		"Knight",
 		"Dame",
-		"Court Magician",
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",

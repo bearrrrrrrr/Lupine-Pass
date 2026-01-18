@@ -164,7 +164,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/magician
-	name = "Court Magician"
+	name = TITLE_VALA
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/physician

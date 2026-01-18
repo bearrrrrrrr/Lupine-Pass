@@ -39,7 +39,7 @@
 		"Hand",
 		"Knight Captain",
 		"Knight",
-		"Court Magician",
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",
