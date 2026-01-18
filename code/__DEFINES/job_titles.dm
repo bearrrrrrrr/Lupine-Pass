@@ -2,7 +2,7 @@
 #define TITLE_OLD_PRIEST "oldpriest"
 
 //Keep
-#define TITLE_HERSIR "Hersir" //1 L, Duke
+#define TITLE_HERSIR "Hersir"
 #define TITLE_VALA "Vala"
 #define TITLE_STELLARI "Stellari"
 #define TITLE_DRENGIR "Drengir" //8 L, MAA

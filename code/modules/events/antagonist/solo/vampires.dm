@@ -23,7 +23,7 @@
 	antag_datum = /datum/antagonist/vampirelord/lesser //vlord once again disabled by host request for now
 
 	restricted_roles = list( // basically just keep and church roles
-		"Grand Duke",
+		TITLE_HERSIR,
 		"Grand Duchess",
 		"Knight Captain",
 		"Consort",

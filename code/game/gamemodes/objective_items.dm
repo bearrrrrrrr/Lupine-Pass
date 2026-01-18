@@ -47,4 +47,4 @@
 	name = "the Lord's crown."
 	targetitem = /obj/item/clothing/head/roguetown/crown/serpcrown
 	difficulty = 3
-	excludefromjob = list("Grand Duke", "Suitor", TITLE_STELLARI)
+	excludefromjob = list(TITLE_HERSIR, "Suitor", TITLE_STELLARI)
