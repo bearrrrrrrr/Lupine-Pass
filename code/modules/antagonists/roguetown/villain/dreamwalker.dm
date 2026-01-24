@@ -240,10 +240,10 @@
 		"Dungeoneer",
 		"Sergeant",
 		"Men-at-arms",
-		"Knight",
+		TITLE_STELLARI,
 		"Squire",
-		"Mercenary",
-		"Warden",
+		TITLE_SAILOR,
+		TITLE_SKOGAMOR,
 	)
 
 	var/mob/living/marked_target = null

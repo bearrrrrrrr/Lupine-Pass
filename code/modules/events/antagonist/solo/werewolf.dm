@@ -22,7 +22,7 @@
 	antag_datum = /datum/antagonist/werewolf
 
 	restricted_roles = list(
-		"Grand Duke",
+		TITLE_HERSIR,
 		"Grand Duchess",
 		"Knight Captain",
 		"Consort",
@@ -32,10 +32,10 @@
 		"Marshal",
 		"Merchant",
 		"Bishop",
-		"Acolyte",
+		TITLE_PRIEST,
 		"Martyr",
 		"Templar",
-		"Bandit",
+		TITLE_RAIDER_NOMAD,
 		"Prince",
 		"Princess",
 		"Hand",
@@ -44,15 +44,15 @@
 		"Town Elder",
 		"Captain",
 		"Archivist",
-		"Knight",
+		TITLE_STELLARI,
 		"Dame",
-		"Court Magician",
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",
-		"Warden",
+		TITLE_SKOGAMOR,
 		"Squire",
-		"Veteran",
+		TITLE_BURGMEISTER,
 		"Apothecary"
 	)
 

@@ -9,11 +9,11 @@
 	shared_occurence_type = SHARED_MINOR_THREAT
 
 	// Allow adventurers and towners to be Thieves' Guild members
-	needed_job = list("Adventurer", "Towner")
+	needed_job = list("Adventurer", TITLE_SMIOR)
 
 	// Restrict from important roles
 	restricted_roles = list(
-		"Grand Duke",
+		TITLE_HERSIR,
 		"Grand Duchess",
 		"Consort",
 		"Dungeoneer",
@@ -21,8 +21,8 @@
 		"Men-at-arms",
 		"Marshal",
 		"Merchant",
-		"Priest",
-		"Acolyte",
+		TITLE_OLD_PRIEST,
+		TITLE_PRIEST,
 		"Martyr",
 		"Templar",
 		"Councillor",
@@ -34,13 +34,13 @@
 		"Town Elder",
 		"Captain",
 		"Archivist",
-		"Knight",
-		"Court Magician",
+		TITLE_STELLARI,
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
-		"Warden",
+		TITLE_SKOGAMOR,
 		"Squire",
-		"Veteran",
+		TITLE_BURGMEISTER,
 		"Apothecary"
 	)
 

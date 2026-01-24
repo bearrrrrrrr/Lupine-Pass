@@ -1596,7 +1596,7 @@
 		return
 	if(slot == SLOT_NECK)
 		active_item = TRUE
-		if(user.mind.special_role == "Bandit")
+		if(user.mind.special_role == TITLE_RAIDER_NOMAD)
 			to_chat(user, span_notice("I feel bolstered by Matthios' Power!"))
 			user.change_stat(STATKEY_STR, 2)
 			user.change_stat(STATKEY_PER, 2)
@@ -1614,7 +1614,7 @@
 	if(!active_item)
 		return
 	active_item = FALSE
-	if(user.mind.special_role == "Bandit")
+	if(user.mind.special_role == TITLE_RAIDER_NOMAD)
 		to_chat(user, span_notice("I've removed the necklace of Matthios..."))
 		user.change_stat(STATKEY_STR, -2)
 		user.change_stat(STATKEY_PER, -2)

@@ -1,5 +1,5 @@
 /datum/objective/bandit
-	name = "bandit"
+	name = "Raider Nomads"
 	explanation_text = "Feed valuables to the idol."
 
 /datum/objective/bandit/check_completion()

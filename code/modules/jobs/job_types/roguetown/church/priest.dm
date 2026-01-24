@@ -14,8 +14,8 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	flag = PRIEST
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	selection_color = JCOLOR_CHURCH
 	f_title = "Bishop"
 	allowed_races = RACES_NO_CONSTRUCT		//Too recent arrivals to ascend to priesthood.
@@ -178,7 +178,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
 		if(!HU.mind)
 			continue
-		if(HU.mind.assigned_role == "Grand Duke")
+		if(HU.mind.assigned_role == TITLE_HERSIR)
 			continue
 		if(!HU.head)
 			continue
@@ -188,22 +188,22 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		//Abdicate previous King
 		for(var/mob/living/carbon/human/HL in GLOB.human_list)
 			if(HL.mind)
-				if(HL.mind.assigned_role == "Grand Duke")
-					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the king
+				if(HL.mind.assigned_role == TITLE_HERSIR)
+					HL.mind.assigned_role = TITLE_SMIOR //So they don't get the innate traits of the king
 			//would be better to change their title directly, but that's not possible since the title comes from the job datum
-			if(HL.job == "Grand Duke")
+			if(HL.job == TITLE_HERSIR)
 				HL.job = "Duke Emeritus"
 
 		//Coronate new King (or Queen)
-		HU.mind.assigned_role = "Grand Duke"
-		HU.job = "Grand Duke"
+		HU.mind.assigned_role = TITLE_HERSIR
+		HU.job = TITLE_HERSIR
 		SSticker.set_ruler_mob(HU)
 		SSticker.regentmob = null
 		var/dispjob = mind.assigned_role
 		removeomen(OMEN_NOLORD)
 		say("By the authority of the gods, I pronounce you Ruler of all the vale!")
 		priority_announce("[real_name] the [dispjob] has named [HU.real_name] the inheritor of ROTWOOD VALE!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/bell.ogg')
-		var/datum/job/roguetown/nomoredukes = SSjob.GetJob("Grand Duke")
+		var/datum/job/roguetown/nomoredukes = SSjob.GetJob(TITLE_HERSIR)
 		if(nomoredukes)
 			nomoredukes.total_positions = -1000 //We got what we got now.
 
@@ -246,7 +246,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 /obj/effect/proc_holder/spell/self/convertrole/monk
 	name = "Recruit Acolyte"
-	new_role = "Acolyte"
+	new_role = TITLE_PRIEST
 	overlay_state = "recruit_acolyte"
 	recruitment_faction = "Church"
 	recruitment_message = "Serve the ten, %RECRUIT!"

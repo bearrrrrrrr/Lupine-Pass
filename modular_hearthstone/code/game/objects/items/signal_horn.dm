@@ -48,9 +48,9 @@
 /obj/item/signal_horn/proc/sound_horn(mob/living/user)
 	user.visible_message(span_userdanger("[user] blows the horn!"))
 	switch(user.job)
-		if("Warden")
+		if(TITLE_SKOGAMOR)
 			playsound(src, 'modular_hearthstone/sound/items/bogguardhorn.ogg', 100, TRUE)
-		if("Town Sheriff", "Watchman", "Sergeant", "Man at Arms")
+		if("Town Sheriff", "Watchman", "Sergeant", TITLE_DRENGIR)
 			playsound(src, 'modular_hearthstone/sound/items/watchhorn.ogg', 100, TRUE)
 		if("Knight Captain", "Royal Guard")
 			playsound(src, 'modular_hearthstone/sound/items/rghorn.ogg', 100, TRUE)
@@ -91,11 +91,11 @@
 				dirtext = "although I cannot make out an exact direction"
 
 		switch(user.job)
-			if("Warden")
+			if(TITLE_SKOGAMOR)
 				player.playsound_local(get_turf(player), 'modular_hearthstone/sound/items/bogguardhorn.ogg', 35, FALSE, pressure_affected = FALSE)
-			if("Marshall", "Watchman", "Sergeant", "Man at Arms")
+			if("Marshall", "Watchman", "Sergeant", TITLE_DRENGIR)
 				player.playsound_local(get_turf(player), 'modular_hearthstone/sound/items/watchhorn.ogg', 35, FALSE, pressure_affected = FALSE)
-			if("Knight Captain", "Knight")
+			if("Knight Captain", TITLE_STELLARI)
 				player.playsound_local(get_turf(player), 'modular_hearthstone/sound/items/rghorn.ogg', 35, FALSE, pressure_affected = FALSE)
 			else
 				player.playsound_local(get_turf(player), 'modular_hearthstone/sound/items/signalhorn.ogg', 35, FALSE, pressure_affected = FALSE)

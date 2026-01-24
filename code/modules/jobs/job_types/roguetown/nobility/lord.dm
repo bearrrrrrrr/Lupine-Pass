@@ -2,15 +2,15 @@ GLOBAL_VAR(lordsurname)
 GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/job/roguetown/lord
-	title = "Grand Duke"
-	f_title = "Grand Duchess"
+	title = TITLE_HERSIR
+	f_title = TITLE_HERSIR
 	flag = LORD
 	department_flag = NOBLEMEN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_NOBLE
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = list(RACES_KEEP)
 	allowed_sexes = list(MALE, FEMALE)
 	advclass_cat_rolls = list(CTAG_LORD = 20)
 
@@ -25,7 +25,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	visuals_only_outfit = /datum/outfit/job/roguetown/lord/visuals
 
 	display_order = JDO_LORD
-	tutorial = "Elevated upon your throne through a web of intrigue and political upheaval, you are the absolute authority of these lands and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error of their ways."
+	tutorial = "Through might or cunning, you’ve procured your position as a trusted agent of your jarl.  You command a contingent of skilled warriors and have been sent to maintain the fort guarding Lupian Pass.  You are to see to the protection of the vault’s stolen wealth and acquire new thralls to send to the mainland at next week’s caravan."
 	whitelist_req = FALSE
 	min_pq = 10
 	max_pq = null
@@ -373,7 +373,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 /obj/effect/proc_holder/spell/self/convertrole/bog
 	name = "Recruit Warden"
-	new_role = "Warden"
+	new_role = TITLE_SKOGAMOR
 	recruitment_faction = "Bog Guard"
 	recruitment_message = "Serve the Wardens, %RECRUIT!"
 	accept_message = "FOR THE GROVE!"

@@ -1,13 +1,13 @@
 /datum/job/roguetown/bandit //pysdon above there's like THREE bandit.dms now I'm so sorry. This one is latejoin bandits, the one in villain is the antag datum, and the one in the 'antag' folder is an old adventurer class we don't use. Good luck!
-	title = "Bandit"
+	title = TITLE_RAIDER_NOMAD
 	flag = BANDIT
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 4
+	spawn_positions = 4
 	antag_job = TRUE
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "You are part of a wandering tribe of bandits, and were here long before the Lupian menace.  Do what you must to survive."
+	tutorial = "You are raider whose tribe has controlled the land well before the lupian menace arrived.  They certainly made things harder for the tribes, but there are still travelers to plunder and capture."
 
 	outfit = null
 	outfit_female = null
@@ -55,7 +55,7 @@
 	var/datum/antagonist/new_antag = new /datum/antagonist/bandit()
 	H.mind.add_antag_datum(new_antag)
 	H.grant_language(/datum/language/thievescant)
-	addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, choose_name_popup), "BANDIT"), 5 SECONDS)
+	addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, choose_name_popup), "RAIDER NOMAD"), 5 SECONDS)
 	var/wanted = list("I am a notorious criminal", "I am a nobody")
 	var/wanted_choice = input("Are you a known criminal?") as anything in wanted
 	switch(wanted_choice)

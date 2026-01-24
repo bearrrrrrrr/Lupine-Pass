@@ -46,9 +46,9 @@
     is_mammon = FALSE
     is_assassinate = TRUE
     var/list/valid_roles
-    valid_roles = list("Grand Duke", "Prince", "Priest", "Priestess", "Councillor", "Acolyte", "Inquisitor", "Merchant", "Town Elder", "Guildmaster", "Steward", "Clerk")
+    valid_roles = list(TITLE_HERSIR, "Prince", TITLE_OLD_PRIEST, "Priestess", "Councillor", TITLE_PRIEST, "Inquisitor", "Merchant", "Town Elder", TITLE_HAMLET_SMITH, "Steward", "Clerk")
     var/list/strong_combat_roles
-    strong_combat_roles = list("Knight", "Marshal", "Knight Captain", "Man at Arms", "Sergeant", "Warden", "Watchman", "Squire", "Dungeoneer", "Mercenary", "Veteran")
+    strong_combat_roles = list(TITLE_STELLARI, "Marshal", "Knight Captain", TITLE_DRENGIR, "Sergeant", TITLE_SKOGAMOR, "Watchman", "Squire", "Dungeoneer", TITLE_SAILOR, TITLE_BURGMEISTER)
     var/list/candidates
     candidates = list()
     var/list/available_roles = list()

@@ -35,9 +35,9 @@
 	name = "Retinue Late (Helm)"
 	icon_state = "arrow"
 	jobspawn_override = list(
-	"Knight",
+	TITLE_STELLARI,
 	"Master-at-Arms",
-	"Man-at-Arms",
+	TITLE_DRENGIR,
 	"Gatekeeper"
 	)
 	delete_after_roundstart = FALSE
@@ -46,7 +46,7 @@
 	name = "Church Late (Helm)"
 	icon_state = "arrow"
 	jobspawn_override = list(	
-	"Priest",
+	TITLE_OLD_PRIEST,
 	"Inquisitor",
 	"Monk",
 	"Chapter Master",
@@ -116,7 +116,7 @@
 	name = "Mercenary Late (Helm)"
 	icon_state = "arrow"
 	jobspawn_override = list(
-	"Mercenary",
+	TITLE_SAILOR,
 	)
 	delete_after_roundstart = FALSE
 
@@ -158,11 +158,11 @@
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/helms/garrison/knight
-	name = "Knight"
+	name = TITLE_STELLARI
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/helms/garrison/manatarms
-	name = "Man-at-Arms"
+	name = TITLE_DRENGIR
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/helms/garrison/masteratarms
@@ -174,7 +174,7 @@
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/helms/church/priest
-	name = "Priest"
+	name = TITLE_OLD_PRIEST
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/helms/church/inquisitor

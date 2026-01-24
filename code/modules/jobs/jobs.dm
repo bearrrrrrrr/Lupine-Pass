@@ -60,7 +60,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	ROLE_PAI))
 
 GLOBAL_LIST_INIT(noble_positions, list(
-	"Grand Duke",
+	TITLE_HERSIR,
 	"Consort",
 	"Suitor",
 	"Prince",
@@ -69,11 +69,11 @@ GLOBAL_LIST_INIT(noble_positions, list(
 	"Marshal",
 	"Councillor",
 	"Steward",
-	"Knight",
+	TITLE_STELLARI,
 ))
 
 GLOBAL_LIST_INIT(courtier_positions, list(
-	"Court Magician",
+	TITLE_VALA,
 	"Court Physician",
 	"Jester",
 	"Seneschal",
@@ -81,9 +81,9 @@ GLOBAL_LIST_INIT(courtier_positions, list(
 
 GLOBAL_LIST_INIT(garrison_positions, list(
 	"Watchman",
-	"Warden",
+	TITLE_SKOGAMOR,
 	"Sergeant",
-	"Man at Arms",
+	TITLE_DRENGIR,
 	"Squire",
 	"Dungeoneer",
 ))
@@ -91,7 +91,7 @@ GLOBAL_LIST_INIT(garrison_positions, list(
 GLOBAL_LIST_INIT(church_positions, list(
 	"Bishop",
 	"Confessor",
-	"Acolyte",
+	TITLE_PRIEST,
 	"Mortician",
 	"Templar",
 	"Druid",
@@ -111,8 +111,8 @@ GLOBAL_LIST_INIT(yeoman_positions, list(
 	"Archivist",
 	"Scribe",
 	"Town Elder",
-	"Bathmaster",
-	"Guildmaster",
+	TITLE_SHIPS_CAPTAIN,
+	TITLE_HAMLET_SMITH,
 	"Guildsman",
 	"Tailor"
 ))
@@ -125,26 +125,23 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Hunter",
 	"Fisher",
 	"Lumberjack",
-	"Towner",
-	"Grabber",
-	"Nightmaster",
+	TITLE_SMIOR,
 	"Tapster",
-	"Bathhouse Attendant",
-	"Docker",
+	TITLE_TAPSTER,
 	"Prisoner",
 	"Beggar",
 	"Adventurer",
 	"Pilgrim",
-	"Bandit",
+	TITLE_RAIDER_NOMAD,
 	"Court Agent",
 	"Wretch",
 ))
 
 GLOBAL_LIST_INIT(mercenary_positions, list(
-	"Mercenary",
+	TITLE_SAILOR,
 	"Grenzelhoft Mercenary",
 	"Desert Rider Mercenary",
-	"Veteran",
+	TITLE_BURGMEISTER,
 ))
 
 GLOBAL_LIST_INIT(youngfolk_positions, list(

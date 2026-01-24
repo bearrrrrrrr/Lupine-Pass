@@ -108,7 +108,7 @@
 	downgrade_wave = /datum/migrant_wave/bandit_down_one
 	can_roll = FALSE
 	weight = 16
-	spawn_landmark = "Bandit"
+	spawn_landmark = TITLE_RAIDER_NOMAD
 	roles = list(
 		/datum/migrant_role/bandit = 4,
 	)
@@ -117,7 +117,7 @@
 	name = "Bandit Raid"
 	downgrade_wave = /datum/migrant_wave/bandit_down_two
 	can_roll = FALSE
-	spawn_landmark = "Bandit"
+	spawn_landmark = TITLE_RAIDER_NOMAD
 	roles = list(
 		/datum/migrant_role/bandit = 3,
 	)
@@ -126,7 +126,7 @@
 	name = "Bandit Raid"
 	downgrade_wave = /datum/migrant_wave/bandit_down_three
 	can_roll = FALSE
-	spawn_landmark = "Bandit"
+	spawn_landmark = TITLE_RAIDER_NOMAD
 	roles = list(
 		/datum/migrant_role/bandit = 2,
 	)
@@ -134,7 +134,7 @@
 /datum/migrant_wave/bandit_down_three
 	name = "Bandit Raid"
 	can_roll = FALSE
-	spawn_landmark = "Bandit"
+	spawn_landmark = TITLE_RAIDER_NOMAD
 	roles = list(
 		/datum/migrant_role/bandit = 1,
 	)

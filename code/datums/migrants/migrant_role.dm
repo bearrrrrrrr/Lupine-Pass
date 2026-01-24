@@ -36,7 +36,7 @@
 	advclass_cat_rolls = list(CTAG_ADVENTURER = 20)
 
 /datum/migrant_role/bandit
-	name = "Bandit"
+	name = TITLE_RAIDER_NOMAD
 	antag_datum = /datum/antagonist/bandit
 	advclass_cat_rolls = list(CTAG_BANDIT = 20)
 	grant_lit_torch = TRUE

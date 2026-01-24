@@ -1,14 +1,15 @@
 /datum/job/roguetown/goblinsmith
-	title = "Goblin Smith"
+	title = TITLE_DEEPDWELLER_SMITH
 	flag = GOBLINSMITH
 	department_flag = GOBLIN
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list()
+	allowed_races = list(RACES_DEEPDWELLERS)
 	allowed_patrons = list(/datum/patron/inhumen/graggar)
-	tutorial = "Goblin rensposible for fresh iron and steel"
+	tutorial = "You’re one of the few true craftsmen of the deepdwellers, and you’ve the burn scars to prove it.\
+				You may only have low quality metal to use, but it matters little; The rank and file will die in droves, anyway.  Your gear only serves to prolong their lives into some semblance of usefulness."
 	display_order = JDO_GOBLINSMITH
 	outfit = /datum/outfit/job/roguetown/goblinsmith
 	min_pq = 0

@@ -23,7 +23,7 @@
 	antag_datum = /datum/antagonist/lich
 
 	restricted_roles = list(
-		"Grand Duke",
+		TITLE_HERSIR,
 		"Grand Duchess",
 		"Consort",
 		"Dungeoneer",
@@ -32,11 +32,11 @@
 		"Marshal",
 		"Merchant",
 		"Bishop",
-		"Acolyte",
+		TITLE_PRIEST,
 		"Martyr",
 		"Templar",
 		"Councillor",
-		"Bandit",
+		TITLE_RAIDER_NOMAD,
 		"Prince",
 		"Princess",
 		"Hand",
@@ -45,14 +45,14 @@
 		"Town Elder",
 		"Knight Captain",
 		"Archivist",
-		"Knight",
-		"Court Magician",
+		TITLE_STELLARI,
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",
-		"Warden",
+		TITLE_SKOGAMOR,
 		"Squire",
-		"Veteran",
+		TITLE_BURGMEISTER,
 		"Apothecary"
 	)
 

@@ -1192,7 +1192,7 @@ SUBSYSTEM_DEF(gamemode)
 		if(!roundstart)
 			if(living.patron)
 				GLOB.patron_follower_counts[living.patron.name]++
-				if(living.job == "Grand Duke")
+				if(living.job == TITLE_HERSIR)
 					GLOB.azure_round_stats[STATS_MONARCH_PATRON] = "[living.patron.name]"
 		if(living.mind.has_antag_datum(/datum/antagonist/bandit))
 			GLOB.azure_round_stats[STATS_BANDITS]++

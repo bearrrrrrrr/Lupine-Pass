@@ -24,7 +24,7 @@
 	antag_datum = /datum/antagonist/dreamwalker
 
 	restricted_roles = list(
-		"Grand Duke",
+		TITLE_HERSIR,
 		"Grand Duchess",
 		"Consort",
 		"Dungeoneer",
@@ -33,17 +33,17 @@
 		"Marshal",
 		"Bishop",
 		"Martyr",
-		"Bandit",
+		TITLE_RAIDER_NOMAD,
 		"Prince",
 		"Princess",
 		"Hand",
 		"Knight Captain",
-		"Knight",
-		"Court Magician",
+		TITLE_STELLARI,
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",
-		"Veteran",
+		TITLE_BURGMEISTER,
 	)
 
 /datum/round_event/antagonist/solo/dreamwalker

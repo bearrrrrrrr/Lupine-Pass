@@ -126,7 +126,7 @@
 	wretch_select_bounty(H)
 
 /datum/advclass/wretch/deserter/maa
-	name = "Disgraced Man at Arms"
+	name = "Disgraced TITLE_DRENGIR"
 	tutorial = "You had your post. You had your duty. Dissatisfied, lacking in morale, or simply thinking yourself better than it. - You decided to walk. Now it follows you everywhere you go."
 	outfit = /datum/outfit/job/roguetown/wretch/desertermaa
 	maximum_possible_slots = 2 //Ideal role for fraggers. Better to limit it. 

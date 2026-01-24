@@ -1,12 +1,13 @@
 /datum/job/roguetown/villager
-	title = "Smidr"
+	title = TITLE_SMIOR
 	flag = VILLAGER
 	department_flag = PEASANTS
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	allowed_races = RACES_ALL_KINDS
-	tutorial = "You've lived in this shithole for effectively all your life. You are not an explorer, nor exactly a warrior in many cases. You're just some average poor bastard who thinks they'll be something someday. Respect the nobles and yeomen alike for they are your superiors - should you find yourself in trouble your Elder is your best hope."
+	allowed_races = RACES_KEEP
+	tutorial = "You are a skilled craftsman, sent to ply your trade to the warriors of the fort.   Though you are respected for your talents, expect no preferential treatment.\
+				You are merely laborer guests here.  Even still, you stand to make good coin; You’ve heard the vault is positively loaded."
 	advclass_cat_rolls = list(CTAG_TOWNER = 20)
 	outfit = null
 	outfit_female = null

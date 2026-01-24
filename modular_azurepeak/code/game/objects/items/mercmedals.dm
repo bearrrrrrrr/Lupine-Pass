@@ -24,10 +24,10 @@
 			to_chat(user, "<span class='warning'>This writ has already been signed.</span>")
 			return
 		if(user.can_read(src))
-			if(user.mind.assigned_role == "Mercenary")
+			if(user.mind.assigned_role == TITLE_SAILOR)
 				to_chat(user, "<span class='warning'>...have I really stooped so low as to sign my own commendation?</span>")
 				return
-			if(user.mind.assigned_role != "Mercenary") // AZURE: anyone can hire a mercenary
+			if(user.mind.assigned_role != TITLE_SAILOR) // AZURE: anyone can hire a mercenary
 				signee = user.real_name
 				signeejob = user.mind.assigned_role
 				visible_message("<span class='warning'>[user] writes their name down on the token.</span>")

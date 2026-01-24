@@ -164,10 +164,10 @@
 	if(istype(P, /obj/item/merctoken))
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
-			if(H.mind.assigned_role != "Mercenary")
+			if(H.mind.assigned_role != TITLE_SAILOR)
 				to_chat(H, "<span class='warning'>This is of no use to me - I may give this to a mercenary so they may send it themselves.</span>")
 				return
-			if(H.mind.assigned_role == "Mercenary")
+			if(H.mind.assigned_role == TITLE_SAILOR)
 				if(H.tokenclaimed == TRUE)
 					to_chat(H, "<span class='warning'>I have already received my commendation. There's always next week to look forward to!</span>")
 					return

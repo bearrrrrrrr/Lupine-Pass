@@ -1,18 +1,18 @@
 /datum/job/roguetown/bogguardsman
-	title = "Warden"
+	title = TITLE_SKOGAMOR
 	flag = BOGGUARD
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	selection_color = JCOLOR_SOLDIER
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_KEEP
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "Typically a denizen of the sparsely populated vale woods, you volunteered up with the wardens--a group of ranger types who keep a vigil over the untamed wilderness. \
-				While Wardens have no higher authority, operating as a fraternity of rangers, you will be called upon as members of the garrison by the Marshal or the Crown. \
-				Serve their will and recieve what a ranger craves the most - freedom and safety."
+	tutorial = "You are a person of the wilds, disgraced by past crimes against your jarl.\
+				Your time as an outcast has made you adept at traversing untrodden land and tracking prey in the dead of winter.\
+				Now, you serve your jarl again in hopes of redemption."
 	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
 

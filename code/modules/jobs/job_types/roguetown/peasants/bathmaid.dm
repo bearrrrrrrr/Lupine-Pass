@@ -1,18 +1,17 @@
 /datum/job/roguetown/nightmaiden
-	title = "Bathhouse Attendant"
-	f_title = "Bathhouse Attendant"
+	title = TITLE_TAPSTER
 	flag = WENCH
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 1
+	spawn_positions = 1
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	
 
-	tutorial = "Dancing, music, or practicioners of the body. You've worked up a reputation as an entertainer, and sometime in life, the bathmaster has chosen to onboard you for one of these talents. In the bathhouse, your place on the hierarchy is determined by how long you've been in the game - and how much mammon you're worth."
+	tutorial = "You are the innkeep’s assistant, sheltered from the horrors outside by their grace.  Assist them in cooking food, brewing booze, and making up rooms."
 
 	outfit = /datum/outfit/job/roguetown/nightmaiden
 	advclass_cat_rolls = list(CTAG_NIGHTMAIDEN = 20)
@@ -41,7 +40,7 @@
 		H.become_blind("advsetup") // Classes are for aesthetic clothing only, mechanically they're identical.
 
 /datum/outfit/job/roguetown/nightmaiden
-	name = "Bathhouse Attendant"
+	name = TITLE_TAPSTER
 	// This is just a base outfit, the actual outfits are defined in the advclasses
 
 /datum/advclass/nightmaiden

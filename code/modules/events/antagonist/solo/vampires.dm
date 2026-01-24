@@ -23,7 +23,7 @@
 	antag_datum = /datum/antagonist/vampirelord/lesser //vlord once again disabled by host request for now
 
 	restricted_roles = list( // basically just keep and church roles
-		"Grand Duke",
+		TITLE_HERSIR,
 		"Grand Duchess",
 		"Knight Captain",
 		"Consort",
@@ -34,11 +34,11 @@
 		"Marshal",
 		"Merchant",
 		"Bishop",
-		"Acolyte",
+		TITLE_PRIEST,
 		"Martyr",
 		"Templar",
 		"Councillor",
-		"Bandit",
+		TITLE_RAIDER_NOMAD,
 		"Prince",
 		"Princess",
 		"Hand",
@@ -52,15 +52,15 @@
 		"Town Elder",
 		"Captain",
 		"Archivist",
-		"Knight",
+		TITLE_STELLARI,
 		"Dame",
-		"Court Magician",
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",
-		"Warden",
+		TITLE_SKOGAMOR,
 		"Squire",
-		"Veteran",
+		TITLE_BURGMEISTER,
 		"Apothecary"
 	)
 

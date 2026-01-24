@@ -142,7 +142,7 @@
 	contents += "<a href='?src=[REF(src)];change=1'>MAMMON LOADED:</a> [budget]<BR>"
 
 	var/mob/living/carbon/human/H = user
-	if(H.job in list("Bathmaster","Bathhouse Attendant"))
+	if(H.job in list(TITLE_SHIPS_CAPTAIN,TITLE_TAPSTER))
 		if(canread)
 			contents += "<a href='?src=[REF(src)];secrets=1'>Secrets</a>"
 		else
@@ -231,4 +231,4 @@ SUBSYSTEM_DEF(BMtreasury)
 		amt_to_generate = round(amt_to_generate)
 		for(var/obj/structure/roguemachine/bathvend/brassface)
 			brassface.budget += amt_to_generate // goes directly into BRASSFACE rather than into any account.
-		send_ooc_note("Income from smuggling hoard to the BRASSFACE: +[amt_to_generate]", job = "Nightmaster")
+		send_ooc_note("Income from smuggling hoard to the BRASSFACE: +[amt_to_generate]", job = TITLE_SHIPS_CAPTAIN)

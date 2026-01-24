@@ -3,8 +3,8 @@
 	flag = SERGEANT
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
@@ -167,11 +167,11 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Man at Arms")
+			if(!target.job == TITLE_DRENGIR)
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
-			if(!(target.job in list("Knight", "Squire")))
+			if(!(target.job in list(TITLE_STELLARI, "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return		
 		if(target == user)
@@ -230,11 +230,11 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Man at Arms")
+			if(!target.job == TITLE_DRENGIR)
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
-			if(!(target.job in list("Knight", "Squire")))
+			if(!(target.job in list(TITLE_STELLARI, "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return		
 		if(target == user)
@@ -262,11 +262,11 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Man at Arms")
+			if(!target.job == TITLE_DRENGIR)
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
-			if(!(target.job in list("Knight", "Squire")))
+			if(!(target.job in list(TITLE_STELLARI, "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return		
 		if(target == user)
@@ -321,11 +321,11 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Man at Arms")
+			if(!target.job == TITLE_DRENGIR)
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
-			if(!(target.job in list("Knight", "Squire")))
+			if(!(target.job in list(TITLE_STELLARI, "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return		
 		if(target == user)

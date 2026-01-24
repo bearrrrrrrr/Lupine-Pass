@@ -64,7 +64,9 @@ SUBSYSTEM_DEF(ticker)
 	var/end_state = "undefined"
 	var/job_change_locked = FALSE
 	var/list/royals_readied = list()
-	var/rulertype = "Grand Duke" // reports whether king or queen rules
+
+	//Lupian Pass notice: I don't think we need this var at all
+	var/rulertype = TITLE_HERSIR // reports whether king or queen rules.
 	var/rulermob = null // reports what the ruling mob is.
 	var/regentmob = null // keeps track of regent mob
 	var/regentday = -1 // to prevent regent shuffling
@@ -762,5 +764,5 @@ SUBSYSTEM_DEF(ticker)
 	if(should_wear_femme_clothes(rulermob))
 		SSticker.rulertype = "Grand Duchess"
 	else
-		SSticker.rulertype = "Grand Duke"
+		SSticker.rulertype = TITLE_HERSIR
 	SEND_GLOBAL_SIGNAL(COMSIG_TICKER_RULERMOB_SET, rulermob)

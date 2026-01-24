@@ -23,7 +23,7 @@
 	weight = 10
 
 	restricted_roles = list(
-		"Grand Duke",
+		TITLE_HERSIR,
 		"Grand Duchess",
 		"Knight Captain",
 		"Consort",
@@ -33,11 +33,11 @@
 		"Marshal",
 		"Merchant",
 		"Bishop",
-		"Acolyte",
+		TITLE_PRIEST,
 		"Martyr",
 		"Templar",
 		"Councillor",
-		"Bandit",
+		TITLE_RAIDER_NOMAD,
 		"Servant",
 		"Prince",
 		"Princess",
@@ -48,16 +48,16 @@
 		"Town Elder",
 		"Captain",
 		"Archivist",
-		"Knight",
+		TITLE_STELLARI,
 		"Dame",
 		"Knight Captain",
-		"Court Magician",
+		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",
-		"Warden",
+		TITLE_SKOGAMOR,
 		"Squire",
-		"Veteran",
+		TITLE_BURGMEISTER,
 		"Apothecary"
 	)
 
