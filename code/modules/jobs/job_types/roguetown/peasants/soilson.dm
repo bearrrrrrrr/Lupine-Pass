@@ -1,10 +1,10 @@
 /datum/job/roguetown/farmer
-	title = "Soilson"
+	title = "Farmer"
 	flag = FARMER
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 5
+	total_positions = 1
+	spawn_positions = 1
 	display_order = JDO_SOILSON
 	selection_color = JCOLOR_PEASANT
 	allowed_sexes = list(MALE, FEMALE)
