@@ -305,7 +305,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/farmer
-	name = "Soilson"
+	name = TITLE_FARMER
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/beastmonger

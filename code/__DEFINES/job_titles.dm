@@ -21,6 +21,8 @@
 
 
 #define TITLE_RAIDER_NOMAD "Raider Nomad"
+//Which group do farmers belong to?
+#define TITLE_FARMER "Farmer"
 
 //Hamlet
 #define TITLE_BURGMEISTER "Burgmeister"

@@ -88,7 +88,7 @@
 	name = "Peasant Late (Helm)"
 	icon_state = "arrow"
 	jobspawn_override = list(
-	"Soilson",
+	TITLE_FARMER,
 	"Serf"
 	)
 	delete_after_roundstart = FALSE
@@ -259,7 +259,7 @@
 	icon_state = "arrow"
   
 /obj/effect/landmark/start/helms/peasants/soilson
-	name = "Soilson"
+	name = TITLE_FARMER
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/helms/peasants/serf

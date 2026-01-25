@@ -118,7 +118,7 @@ GLOBAL_LIST_INIT(yeoman_positions, list(
 ))
 
 GLOBAL_LIST_INIT(peasant_positions, list(
-	"Soilson",
+	TITLE_FARMER,
 	"Cook",
 	"Lunatic",
 	"Miner",

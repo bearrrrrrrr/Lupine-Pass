@@ -1,5 +1,5 @@
 /datum/job/roguetown/farmer
-	title = "Farmer"
+	title = TITLE_FARMER
 	flag = FARMER
 	department_flag = PEASANTS
 	faction = "Station"
