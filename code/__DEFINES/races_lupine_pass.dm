@@ -4,5 +4,5 @@
 	/datum/species/critterfolk \
 
 #define RACES_KEEP \
-	/datum/species/lupianm, \
+	/datum/species/lupian, \
 	/datum/species/vulpkanin \
