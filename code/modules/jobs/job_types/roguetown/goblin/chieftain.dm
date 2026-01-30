@@ -2,7 +2,7 @@
 /datum/job/roguetown/goblinking
 	title = TITLE_DEEPDWELLER_CHIEFTAIN
 	flag = GOBLINKING
-	department_flag = NOBLEMEN
+	department_flag = GOBLIN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
