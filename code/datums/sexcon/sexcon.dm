@@ -42,6 +42,7 @@
 	var/mob/living/carbon/knotted_recipient = null // whom took the knot
 	/// Which zones we are using in the current action.
 	var/using_zones = list()
+	var/orgasm_counter = 0 //you know, to tell how many orgasms there is
 
 /datum/sex_controller/New(mob/living/carbon/human/owner)
 	user = owner
@@ -185,7 +186,13 @@
 	else
 		playsound(target, 'sound/misc/mat/endin.ogg', 50, TRUE, ignore_walls = FALSE)
 	if(user != target)
-		knot_try()
+		orgasm_counter += 1
+		if(orgasm_counter >= 30)
+			orgasm_counter = 0
+			knot_try()
+		if(target.has_status_effect(/datum/status_effect/knot_fucked_stupid))
+			for(var/datum/status_effect/knot_fucked_stupid/stupid in target.status_effects)
+				stupid.refresh()
 	if(splashed_user && !splashed_user.sexcon.knotted_status)
 		if(!oral)
 			splashed_user.apply_status_effect(/datum/status_effect/facial/internal)
@@ -489,18 +496,26 @@
 
 /datum/status_effect/knot_fucked_stupid
 	id = "knot_fucked_stupid"
-	duration = 2 MINUTES
+	duration = 30 MINUTES
 	status_type = STATUS_EFFECT_UNIQUE
 	alert_type = /atom/movable/screen/alert/status_effect/knot_fucked_stupid
-	effectedstats = list("intelligence" = -10)
+	effectedstats = list(STATKEY_INT = -10, STATKEY_END = -10, STATKEY_STR = -10)
 
 /atom/movable/screen/alert/status_effect/knot_fucked_stupid
 	name = "Fucked Stupid"
-	desc = "Mmmph I can't think straight..."
+	desc = "<font color='#f590ce'><span class='bold'>Mmmph I can't think straight...</span></font>"
+
+/datum/status_effect/knot_fucked_stupid/on_apply()
+	. = ..()
+	ADD_TRAIT(owner, TRAIT_PACIFISM, "FUCKED STUPID")
+
+/datum/status_effect/knot_fucked_stupid/on_remove()
+	. = ..()
+	REMOVE_TRAIT(owner, TRAIT_PACIFISM, "FUCKED STUPID")
 
 /datum/status_effect/knot_gaped
 	id = "knot_gaped"
-	duration = 60 SECONDS
+	duration = 60 SECONDS 
 	tick_interval = 100 // every 10 seconds
 	status_type = STATUS_EFFECT_UNIQUE
 	alert_type = /atom/movable/screen/alert/status_effect/knot_gaped
