@@ -123,13 +123,15 @@
 	REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 
 /obj/item/clothing/neck/roguetown/cursed_collar/canStrip(mob/living/carbon/human/stripper, mob/living/carbon/human/owner)
-	if(!stripper.mind)
+	if(!owner.mind)
 		return
-	if(stripper.mind == collar_master)
+	if(stripper.mind != owner)
 		REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 		SEND_SIGNAL(owner, COMSIG_CARBON_LOSE_COLLAR)
 		return TRUE
-	. = ..()
+	else
+		return FALSE
+//	. = ..() Might not be necessary
 
 /obj/item/clothing/neck/roguetown/cursed_collar/proc/send_collar_signal(mob/living/carbon/human/user)
     if(!collar_master) // Don't send signal if no master
