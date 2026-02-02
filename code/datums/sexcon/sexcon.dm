@@ -187,30 +187,6 @@
 		playsound(target, 'sound/misc/mat/endin.ogg', 50, TRUE, ignore_walls = FALSE)
 	if(user != target)
 		knot_try()
-/*
-		if(HAS_TRAIT(user, TRAIT_DEATHBYSNUSNU) && istype(user.rmb_intent, /datum/rmb_intent/strong)) //If the one fucking has it
-			target.sexcon.orgasm_counter += 1
-			to_chat(user, "Current Orgasm Counter of [target] : [target.sexcon.orgasm_counter]")
-			if(target.sexcon.orgasm_counter >= 2)
-				to_chat(user, "Resetting Orgasm Counter")
-				target.sexcon.orgasm_counter = 0
-				handle_mindBreak(target, user)
-		if(HAS_TRAIT(target, TRAIT_DEATHBYSNUSNU) && istype(target.rmb_intent, /datum/rmb_intent/strong)) //if the one being fucked has it
-			user.sexcon.orgasm_counter += 1
-			to_chat(target, "Current Orgasm Counter of [user] : [user.sexcon.orgasm_counter]")
-			if(user.sexcon.orgasm_counter >= 2)
-				to_chat(user, "Resetting Orgasm Counter")
-				user.sexcon.orgasm_counter = 0
-				handle_mindBreak(user, target)
-*/
-/*
-		if(target.has_status_effect(/datum/status_effect/knot_fucked_stupid))
-			for(var/datum/status_effect/knot_fucked_stupid/stupid in target.status_effects)
-				stupid.refresh()
-		if(user.has_status_effect(/datum/status_effect/knot_fucked_stupid))
-			for(var/datum/status_effect/knot_fucked_stupid/stupid in user.status_effects)
-				stupid.refresh()
-*/
 	if(splashed_user && !splashed_user.sexcon.knotted_status)
 		if(!oral)
 			splashed_user.apply_status_effect(/datum/status_effect/facial/internal)
@@ -228,9 +204,9 @@
 			to_chat(mind_breaker, span_warningbig("Resetting Orgasm Counter"))
 			mind_breaked.sexcon.orgasm_counter = 0
 			handle_mindBreak(mind_breaked, mind_breaker)
-	if(mind_breaked.has_status_effect(/datum/status_effect/knot_fucked_stupid))
-		for(var/datum/status_effect/knot_fucked_stupid/stupid in mind_breaked.status_effects)
-			stupid.refresh()
+		if(mind_breaked.has_status_effect(/datum/status_effect/knot_fucked_stupid))
+			for(var/datum/status_effect/knot_fucked_stupid/stupid in mind_breaked.status_effects)
+				stupid.refresh()
 
 /datum/sex_controller/proc/handle_mindBreak(var/mob/living/carbon/human/mind_breaked, var/mob/living/carbon/human/mind_breaker)
 	if(!mind_breaked.has_status_effect(/datum/status_effect/knot_fucked_stupid))
@@ -553,7 +529,7 @@
 
 /datum/status_effect/knot_gaped
 	id = "knot_gaped"
-	duration = 60 SECONDS 
+	duration = 60 SECONDS
 	tick_interval = 100 // every 10 seconds
 	status_type = STATUS_EFFECT_UNIQUE
 	alert_type = /atom/movable/screen/alert/status_effect/knot_gaped
