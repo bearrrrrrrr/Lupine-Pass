@@ -220,14 +220,14 @@
 	if(!oral)
 		after_intimate_climax()
 
-/datum/sec_controller/proc/handle_orgasm_coutner(var/mob/living/carbon/human/mind_breaked, var/mob/living/carbon/human/mind_breaker)
+/datum/sex_controller/proc/handle_orgasm_counter(var/mob/living/carbon/human/mind_breaked, var/mob/living/carbon/human/mind_breaker)
 	if(HAS_TRAIT(mind_breaker, TRAIT_DEATHBYSNUSNU) && istype(mind_breaker.rmb_intent, /datum/rmb_intent/strong)) //If the one fucking has it
 		mind_breaked.sexcon.orgasm_counter += 1
 		to_chat(mind_breaker, "Current Orgasm Counter of [mind_breaked] : [mind_breaked.sexcon.orgasm_counter]")
 		if(mind_breaked.sexcon.orgasm_counter >= 2)
 			to_chat(mind_breaker, span_warningbig("Resetting Orgasm Counter"))
 			mind_breaked.sexcon.orgasm_counter = 0
-			handle_mindBreak(mind_breaked, mind_beaker)
+			handle_mindBreak(mind_breaked, mind_breaker)
 	if(mind_breaked.has_status_effect(/datum/status_effect/knot_fucked_stupid))
 		for(var/datum/status_effect/knot_fucked_stupid/stupid in mind_breaked.status_effects)
 			stupid.refresh()
