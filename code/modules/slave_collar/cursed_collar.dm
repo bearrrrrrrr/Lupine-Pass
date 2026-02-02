@@ -130,6 +130,7 @@
 		SEND_SIGNAL(owner, COMSIG_CARBON_LOSE_COLLAR)
 		return TRUE
 	else
+		to_chat(owner, span_warning("The Collar shocks you, stopping you from taking it off!"))
 		return FALSE
 //	. = ..() Might not be necessary
 
