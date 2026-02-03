@@ -348,7 +348,7 @@
 		// no ration wrappers by design
 
 /datum/advclass/trader/ponygirl
-	name = "Ponygirl"
+	name = "Whorse"
 	tutorial = "Trained to serve as a mount and beast of burden, you are equipped with special gear and training."
 	outfit = /datum/outfit/job/roguetown/adventurer/ponygirl
 	traits_applied = list( //Removed Pacifist cause what other reason is there to have the combat skills in the first place
