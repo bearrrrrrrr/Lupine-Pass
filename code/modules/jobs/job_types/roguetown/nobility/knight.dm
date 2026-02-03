@@ -137,7 +137,7 @@
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 
 	var/helmets = list(
-		"Lupian Helmet" 	= /obj/item/clothing/head/roguetown/heavy/volfplate,
+		"Lupian Helmet" 	= /obj/item/clothing/head/roguetown/helmet/heavy/volfplate,
 		"None"
 	)
 	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
@@ -208,7 +208,7 @@
 	backl = /obj/item/rogueweapon/shield/tower/metal
 
 	var/helmets = list(
-		"Lupian Helmet" 	= /obj/item/clothing/head/roguetown/heavy/volfplate,
+		"Lupian Helmet" 	= /obj/item/clothing/head/roguetown/helmet/heavy/volfplate,
 		"None"
 	)
 	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
@@ -302,7 +302,7 @@
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 
 	var/helmets = list(
-		"Lupian Helmet" 	= /obj/item/clothing/head/roguetown/heavy/volfplate,
+		"Lupian Helmet" 	= /obj/item/clothing/head/roguetown/helmet/heavy/volfplate,
 		"None"
 	)
 	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
@@ -409,7 +409,7 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/fluted
 
 	var/helmets = list(
-		"Lupian Helmet" 	= /obj/item/clothing/head/roguetown/heavy/volfplate,
+		"Lupian Helmet" 	= /obj/item/clothing/head/roguetown/helmet/heavy/volfplate,
 		"None"
 	)
 	
