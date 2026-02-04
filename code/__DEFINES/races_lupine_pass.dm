@@ -8,7 +8,7 @@
 	/datum/species/vulpkanin \
 
 
-#define RACES_KEEP_DERENGIR \
+#define RACES_KEEP_DRENGIR \
 	/datum/species/lupian, \
 	/datum/species/vulpkanin, \
 	/datum/species/beastman \

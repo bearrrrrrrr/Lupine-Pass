@@ -22,7 +22,7 @@
 		return
 	if(target.client.prefs.defiant && target.cmode) //Technically it's already in shows_on_menu() but eh double protection
 		to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
-		log_combat(user, target "tried to use ERP menu against")
+		log_combat(user, target, "tried to use ERP menu against")
 		return
 /*
 	if(!user.client.prefs.sexable)

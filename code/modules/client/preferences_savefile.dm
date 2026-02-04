@@ -208,7 +208,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["autoconsume"]		>> autoconsume
 	S["crt"]				>> crt
 	S["grain"]				>> grain
-	S["sexable"]			>> sexable
+//	S["sexable"]			>> sexable
 	S["shake"]				>> shake
 	S["mastervol"]			>> mastervol
 	S["lastclass"]			>> lastclass
@@ -330,7 +330,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["mute_animal_emotes"], mute_animal_emotes)
 	WRITE_FILE(S["autoconsume"], autoconsume)
 	WRITE_FILE(S["crt"], crt)
-	WRITE_FILE(S["sexable"], sexable)
+//	WRITE_FILE(S["sexable"], sexable)
 	WRITE_FILE(S["shake"], shake)
 	WRITE_FILE(S["lastclass"], lastclass)
 	WRITE_FILE(S["mastervol"], mastervol)
