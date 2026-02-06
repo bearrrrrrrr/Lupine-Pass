@@ -21,7 +21,7 @@
 	response_harm_continuous = "kicks"
 	response_harm_simple = "kick"
 	gold_core_spawnable = FRIENDLY_SPAWN
-	animal = TRUE
+
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 //Captain fox
@@ -31,4 +31,3 @@
 	gender = FEMALE
 	gold_core_spawnable = NO_SPAWN
 	unique_pet = TRUE
-	animal = TRUE

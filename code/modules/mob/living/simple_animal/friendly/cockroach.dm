@@ -27,7 +27,6 @@
 	verb_yell = "chitters loudly"
 	var/squish_chance = 50
 	del_on_death = 1
-	animal = TRUE
 
 /mob/living/simple_animal/cockroach/death(gibbed)
 	..()

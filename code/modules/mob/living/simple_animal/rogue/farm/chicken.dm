@@ -59,7 +59,6 @@
 	STASTR = 6
 	STASPD = 1
 	tame = TRUE
-	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/chicken/get_sound(input)
 	switch(input)

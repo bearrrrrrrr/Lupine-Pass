@@ -44,7 +44,6 @@
 	dodgetime = 0
 	aggressive = 1
 	
-	animal = TRUE
 //	stat_attack = UNCONSCIOUS
 
 	can_have_ai = FALSE //disable native ai
