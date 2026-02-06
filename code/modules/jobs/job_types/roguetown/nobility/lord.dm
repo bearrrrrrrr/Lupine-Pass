@@ -88,12 +88,12 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		to_chat(H, span_warning("My crown must be yet in the realm. I shall search it out."))
 */
 	if(should_wear_femme_clothes(H))
-		pants = /obj/item/clothing/under/roguetown/tights/black
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-		armor = /obj/item/clothing/suit/roguetown/shirt/dress/royal
-		cloak = /obj/item/clothing/cloak/lordcloak/ladycloak
-		wrists = /obj/item/clothing/wrists/roguetown/royalsleeves
-		shoes = /obj/item/clothing/shoes/roguetown/shortboots
+		pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
+		shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+		armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
+		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchains
+		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
+		hands = 
 	else if(should_wear_masc_clothes(H))
 		pants = /obj/item/clothing/under/roguetown/tights/black
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
