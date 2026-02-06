@@ -1001,6 +1001,9 @@
 	// Do action loop
 	var/performed_action_type = current_action
 	var/datum/sex_action/action = SEX_ACTION(current_action)
+	if(target.client.prefs.defiant && target.cmode)
+		to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
+		return
 	action.on_start(user, target)
 	while(TRUE)
 		if(!user.stamina_add(action.stamina_cost * get_stamina_cost_multiplier()))
