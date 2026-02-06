@@ -19,7 +19,8 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		/obj/effect/proc_holder/spell/self/convertrole/servant,
 		/obj/effect/proc_holder/spell/self/convertrole/guard,
 		/obj/effect/proc_holder/spell/self/grant_nobility,
-		/obj/effect/proc_holder/spell/self/convertrole/bog
+		/obj/effect/proc_holder/spell/self/convertrole/bog,
+		/obj/effect/proc_holder/spell/self/werewolf_transform
 	)
 	outfit = /datum/outfit/job/roguetown/lord
 	visuals_only_outfit = /datum/outfit/job/roguetown/lord/visuals
@@ -78,11 +79,14 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/outfit/job/roguetown/lord/pre_equip(mob/living/carbon/human/H)
 	..()
+/*
 	if(SSroguemachine.crown == null || (QDELETED(SSroguemachine.crown)))
 		SSroguemachine.crown = null
 		head = /obj/item/clothing/head/roguetown/crown/serpcrown
+
 	else
 		to_chat(H, span_warning("My crown must be yet in the realm. I shall search it out."))
+*/
 	if(should_wear_femme_clothes(H))
 		pants = /obj/item/clothing/under/roguetown/tights/black
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
@@ -103,6 +107,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			qdel(H.wear_mask)
 			mask = /obj/item/clothing/mask/rogue/lordmask/l
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 
 //	SSticker.rulermob = H
 /**
@@ -117,10 +122,11 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	subclass_stats = list(
 		STATKEY_LCK = 5,
 		STATKEY_INT = 3,
-		STATKEY_END = 3,
+		STATKEY_END = 5,
 		STATKEY_PER = 2,
 		STATKEY_SPD = 1,
-		STATKEY_STR = 1,
+		STATKEY_STR = 3,
+		STATKEY_CON = 2,
 	)
 
 /datum/outfit/job/roguetown/lord/warrior/pre_equip(mob/living/carbon/human/H)
@@ -148,7 +154,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	Get nice traits for seeing price, secular appraise and keen ears for spying.
 	Weapon skills are worse across the board compared to the warrior lord, apprentice only.
 	Has a high noble income plus a starting pouch with insane amount of money.
-*/
+
 /datum/advclass/lord/merchant
 	name = "Merchant Lord"
 	tutorial = "You were always talented with coins and trade. And your talents have brought you to the position of the Lord of Rotwood Vale. You could be a merchant who bought his way into nobility and power, or an exceptionally talented noble who were inclined to be good with coins. Fighting directly is not your forte\
@@ -184,13 +190,13 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/appraise/secular)
 
-/**
+
 	Inbred Lord subclass. A joke class, evolution of the Inbred Wastrel.
 	Literally the same stat line and skills line, but with one exception - 10 Fortune.
 	Why? Because it is funny, that's why. They also have heavy armor training.
 	The fact that the inbred wastrel with 20 fortune and critical weakness
 	can get into heavy armor and try to fight is hilarious.
-*/
+
 /datum/advclass/lord/inbred
 	name = "Inbred Lord"
 	tutorial = "Psydon and Astrata smiles upon you. For despite your inbred and weak body, and your family's conspiracies to remove you from succession, you have somehow become the Lord of Rotwood Vale. May your reign lasts a hundred years."
@@ -222,6 +228,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 
+*/
 /datum/outfit/job/roguetown/lord/visuals/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/crown/fakecrown //Prevents the crown of woe from happening again.
