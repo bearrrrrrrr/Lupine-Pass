@@ -51,14 +51,6 @@ GLOBAL_LIST_INIT(ghost_verbs, list(
 	if(isobserver(mob))
 		var/mob/dead/observer/O = mob
 		O.reenter_corpse()
-/*
-/client/proc/ghost_out()
-	set category = "Spirit"
-	set name = "Move out of Corpse"
-	if(isobserver(mob))
-		var/mob/dead/observer/O = mob
-		O.reenter_corpse()
-*/
 
 /mob/verb/returntolobby()
 	set name = "{RETURN TO LOBBY}"
@@ -121,7 +113,6 @@ GLOBAL_LIST_INIT(ghost_verbs, list(
 				if(animal.animal == TRUE)
 					continue
 
-//awaag
 			if(!(L in GLOB.player_list) && !L.mind)
 				possessible += L
 
