@@ -63,7 +63,7 @@
 
 // Melee goon
 /datum/advclass/manorguard/footsman
-	name = "Footman"
+	name = "Drengir Footman"
 	tutorial = "You are a professional soldier of the realm, specializing in melee warfare. Stalwart and hardy, your body can both withstand and dish out powerful strikes.."
 	outfit = /datum/outfit/job/roguetown/manorguard/footsman
 
@@ -161,7 +161,7 @@
 
 // Ranged weapons and daggers on the side - lighter armor, but fleet!
 /datum/advclass/manorguard/skirmisher
-	name = "Skirmisher"
+	name = "Drengir Skirmisher"
 	tutorial = "You are a professional soldier of the realm, specializing in ranged implements. You sport a keen eye, looking for your enemies weaknesses."
 	outfit = /datum/outfit/job/roguetown/manorguard/skirmisher
 
@@ -256,7 +256,7 @@
 		
 
 /datum/advclass/manorguard/cavalry
-	name = "Cavalryman"
+	name = "Drengir Cavalryman"
 	tutorial = "You are a professional soldier of the realm, specializing in the steady beat of hoof falls. Lighter and more expendable then the knights, you charge with lance in hand."
 	outfit = /datum/outfit/job/roguetown/manorguard/cavalry
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled //Since knights start with the Buck
@@ -350,7 +350,7 @@
 	pants = chausses[chausseschoice]
 
 /datum/advclass/manorguard/guardmaster
-	name = "Guardmaster"
+	name = "Drengir Guardmaster"
 	tutorial = "You are a professional soldier of the realm, specializing in melee warfare. You have been instructed in keeping order in the fort; Man the walls, ensure the gate is kept locked, organize idle drengir, and know all who are allowed in and out."
 	outfit = /datum/outfit/job/roguetown/manorguard/guardmaster
 	maximum_possible_slots = 1
@@ -445,7 +445,7 @@
 	pants = chausses[chausseschoice]
 
 /datum/advclass/manorguard/slavekeeper
-	name = "Slavekeeper"
+	name = "Drengir Slavekeeper"
 	tutorial = "You are a professional in the field of managing slaves.  You get to live comfortably in the fort, and never have to patrol; All you have to do is ensure none of the slaves escape, and they're being used properly!"
 	outfit = /datum/outfit/job/roguetown/manorguard/slavekeeper
 	maximum_possible_slots = 1
