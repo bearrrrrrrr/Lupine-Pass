@@ -234,6 +234,8 @@ GLOBAL_LIST_EMPTY(heretical_players)
 			to_chat(src, span_warning("Your announcement was interrupted!"))
 			return FALSE
 
+*/
+
 /obj/effect/proc_holder/spell/self/convertrole/templar
 	name = "Recruit Templar"
 	new_role = "Templar"
@@ -252,6 +254,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	accept_message = "FOR THE TEN!"
 	refuse_message = "I refuse."
 
+/**
 /mob/living/carbon/human/proc/completesermon()
 	set name = "Sermon"
 	set category = "Priest"
