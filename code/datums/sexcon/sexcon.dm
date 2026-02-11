@@ -977,6 +977,13 @@
 	using_zones = list()
 
 /datum/sex_controller/proc/try_start_action(action_type)
+//Refactoring it so I can make a global bit if checker
+	if(target.client.prefs.defiant && !target.compliance && target != user)
+		var/consent_check = alert(target, "You are currently in Defiant Mode, Would you wish to allow this act to continue or not? \
+				(Notice: If you wish to turn off this prompt but not Defiant Mode, please turn on Compliance Mode during Sex)", "WARNING!!!", "Yes", "No")
+		if(consent_check == "No")
+			try_stop_current_action()
+			return
 	if(action_type == current_action)
 		try_stop_current_action()
 		return
