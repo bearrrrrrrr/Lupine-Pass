@@ -57,6 +57,10 @@
 	desc = "To quench the woman's thirst."
 	can_custom = FALSE
 
+/obj/item/dildo/examine()
+	. = ..()
+	. += "[span_notice("It can be attached onto most belts.")]"
+
 /obj/item/dildo/wood
 	color = "#7D4033"
 	resistance_flags = FLAMMABLE
