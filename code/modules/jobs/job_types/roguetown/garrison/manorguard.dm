@@ -790,7 +790,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 
-	spells = /obj/effect/proc_holder/spell/self/werewolf_transform
+
 
 	H.adjust_blindness(-5)
 	var/weapons = list("Warhammer & Shield","Axe & Shield","Halberd","Greataxe")
