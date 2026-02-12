@@ -416,6 +416,11 @@
 	force_wielded = 33 // Also +3
 	max_integrity = 200
 
+/datum/intent/sword/thrust/exe
+	swingdelay = 4	//Slight delay to stab; big and heavy.
+	penfactor = 50
+	intent_intdamage_factor = 1.3
+
 /obj/item/rogueweapon/sword/long/zizo
 	name = "avantyne longsword"
 	desc = "A wicked, unconventional, and otherwordly blade that was created by no swordsmith - a manifestation of hate for the state of this world that follows no design principles but spite and anger."
