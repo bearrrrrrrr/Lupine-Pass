@@ -229,7 +229,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		if(do_after(src, 15 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
 			if()
 			say(announcementinput)
-			priority_announce("[announcementinput]", "The Bishop Preaches", 'sound/misc/bell.ogg', sender = src)
+			priority_announce("[announcementinput]", "The Priest Preaches", 'sound/misc/bell.ogg', sender = src)
 			COOLDOWN_START(src, priest_announcement, PRIEST_ANNOUNCEMENT_COOLDOWN)
 		else
 			to_chat(src, span_warning("Your announcement was interrupted!"))
