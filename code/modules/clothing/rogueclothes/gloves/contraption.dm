@@ -56,7 +56,7 @@
 	..()
 
     // === VOLTIC ZAP ===
-/obj/item/clothing/gloves/roguetown/contraption/voltic/proc/activate(mob/living/user)
+/obj/item/clothing/gloves/roguetown/contraption/voltic/attack_right(mob/user)
 	if (!user)
 		return
 	if (!current_charge)
