@@ -28,8 +28,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/exoticsilkbra
 	neck = /obj/item/clothing/neck/roguetown/collar/leather
 	belt = /obj/item/storage/belt/rogue/leather/exoticsilkbelt
-	beltl = /obj/item/storage/belt/rogue/pouch
-	beltr = /obj/item/flint
 	shoes = /obj/item/clothing/shoes/roguetown/anklets
 	mask = /obj/item/clothing/mask/rogue/exoticsilkmask
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
@@ -42,10 +40,10 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
-/*
+
 /datum/job/roguetown/prisonerr/special_check_latejoin(client/C)
-	return FALSE
-*/
+	return TRUE
+
 // Prisoner-specific subclasses, inheriting from towner roles
 /datum/outfit/job/roguetown/prisoner_farmer
 	name = "Prisoner Farmer"
@@ -53,6 +51,21 @@
 /datum/outfit/job/roguetown/prisoner_farmer/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(!H) return
 	..() // Call base prisoner outfit for collar/loincloth
+	head = /obj/item/clothing/head/roguetown/armingcap
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	backl = /obj/item/storage/backpack/rogue/satchel
+	mouth = /obj/item/rogueweapon/huntingknife
+	beltr = /obj/item/flint
+	backpack_contents = list(
+						/obj/item/seeds/wheat=1,
+						/obj/item/seeds/apple=1,
+						/obj/item/ash=1,
+						/obj/item/flashlight/flare/torch = 1,
+						/obj/item/recipe_book/survival = 1,
+						/obj/item/rogueweapon/scabbard/sheath = 1
+						)
+	beltl = /obj/item/rogueweapon/sickle
+	backr = /obj/item/rogueweapon/hoe
 	if(H.mind)
 		H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
@@ -529,6 +542,7 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/regression)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/convergence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stasis)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/revive/naledi)
 
 // Cleric Prisoner subclass
 /datum/advclass/prisonercleric
@@ -561,7 +575,7 @@
 	H.change_stat("endurance", 1)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 1)
-
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/revive)
 	// Faith-specific cross on wrist instead of neck
 	switch(H.patron?.type)
 		if(/datum/patron/old_god)
