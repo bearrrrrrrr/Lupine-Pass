@@ -42,10 +42,10 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
-
+/*
 /datum/job/roguetown/prisonerr/special_check_latejoin(client/C)
 	return FALSE
-
+*/
 // Prisoner-specific subclasses, inheriting from towner roles
 /datum/outfit/job/roguetown/prisoner_farmer
 	name = "Prisoner Farmer"
