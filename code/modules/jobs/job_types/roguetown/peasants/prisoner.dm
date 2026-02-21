@@ -668,6 +668,28 @@
 	switch(H.patron?.type)
 		if(/datum/patron/inhumen/zizo)
 			H.cmode_music = 'sound/music/combat_cult.ogg'
+	head = /obj/item/clothing/head/roguetown/witchhat
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/phys
+	gloves = /obj/item/clothing/gloves/roguetown/leather/black
+	beltl = /obj/item/storage/magebag
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+	backl = /obj/item/storage/backpack/rogue/satchel
+	backpack_contents = list(
+						/obj/item/reagent_containers/glass/mortar = 1,
+						/obj/item/pestle = 1,
+						/obj/item/candle/yellow = 2,
+						/obj/item/recipe_book/alchemy = 1,
+						/obj/item/recipe_book/survival = 1,
+						/obj/item/recipe_book/magic = 1,
+						/obj/item/chalk = 1
+						)
+	if(H.mind)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/guidance)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/arcynebolt)
+		H.mind.adjust_spellpoints(6)
+	if(H.gender == FEMALE)
+		armor = /obj/item/clothing/suit/roguetown/armor/corset
 
 /datum/advclass/prisoner_miner
 	parent_type = /datum/advclass
@@ -699,6 +721,19 @@
 	H.change_stat("constitution", 2)
 	H.change_stat("fortune", 2)
 	ADD_TRAIT(H, TRAIT_DARKVISION, TRAIT_GENERIC)
+	head = /obj/item/clothing/head/roguetown/armingcap
+	beltl = /obj/item/rogueweapon/pick
+	beltr = /obj/item/rogueweapon/huntingknife
+	backl = /obj/item/storage/backpack/rogue/backpack
+	backpack_contents = list(
+						/obj/item/flint = 1,
+						/obj/item/flashlight/flare/torch = 1,
+						/obj/item/rogueweapon/chisel = 1, 
+						/obj/item/rogueweapon/hammer/wood = 1,
+						/obj/item/recipe_book/survival = 1,
+						/obj/item/recipe_book/builder = 1,
+						/obj/item/rogueweapon/scabbard/sheath = 1
+						)
 
 /datum/advclass/prisoner_woodcutter
 	parent_type = /datum/advclass
@@ -732,6 +767,20 @@
 	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 1)
 	H.change_stat("perception", 1)
+	head = /obj/item/clothing/head/roguetown/roguehood
+	backr = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/rogueweapon/stoneaxe/woodcut/steel/woodcutter		//Unique axe, not craftable purposefully. Good axe, but not end-all be-all for combat.
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	beltr = /obj/item/rogueweapon/handsaw
+	beltl = /obj/item/rogueweapon/hammer/wood
+	backpack_contents = list(
+						/obj/item/flint = 1,
+						/obj/item/flashlight/flare/torch = 1,
+						/obj/item/rogueweapon/huntingknife = 1,
+						/obj/item/recipe_book/builder = 1,
+						/obj/item/recipe_book/survival = 1,
+						/obj/item/rogueweapon/scabbard/sheath = 1
+						)
 
 /datum/advclass/prisoner_naledi_healer
 	name = "Prisoner Naledi"
@@ -763,7 +812,6 @@
 	H.change_stat("endurance", 1)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 1)
-	wrists = /obj/item/clothing/neck/roguetown/psicross/naledi
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T4, passive_gain = CLERIC_REGEN_MAJOR, start_maxed = TRUE)	//Starts off maxed out.
 	if(H.mind)
@@ -774,6 +822,20 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/convergence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stasis)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/revive/naledi)
+	backl = /obj/item/rogueweapon/woodstaff/naledi
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+	gloves = /obj/item/clothing/gloves/roguetown/angle
+	backr = /obj/item/storage/backpack/rogue/satchel/black
+	head = /obj/item/clothing/head/roguetown/roguehood/shalal/black
+	cloak = /obj/item/clothing/cloak/half
+	wrists = /obj/item/clothing/neck/roguetown/psicross/naledi
+	beltl = /obj/item/flashlight/flare/torch
+	H.grant_language(/datum/language/celestial)
+
+	backpack_contents = list(
+		/obj/item/rogueweapon/huntingknife = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1
+		)
 
 // Cleric Prisoner subclass
 /datum/advclass/prisonercleric
