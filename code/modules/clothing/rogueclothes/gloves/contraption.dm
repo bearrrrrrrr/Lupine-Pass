@@ -65,7 +65,7 @@
 		return
 	var/skill = user.get_skill_level(/datum/skill/craft/engineering)
 	// Check for misfire before activation
-	if(misfire_chance && prob(max(0, misfire_chance - user.goodluck(2) - skill)))
+	if(misfire_chance && prob(max(0, misfire_chance - skill - user.STATKEY_INT)))
 		misfire(src, user)
 		return
 	// spend a charge
