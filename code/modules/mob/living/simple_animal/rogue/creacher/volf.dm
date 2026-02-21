@@ -66,8 +66,8 @@
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/wolf
 	eat_forever = TRUE
-	
-	animal = TRUE
+	animal = TRUE	
+
 //new ai, old ai off
 	AIStatus = AI_OFF
 	can_have_ai = FALSE
