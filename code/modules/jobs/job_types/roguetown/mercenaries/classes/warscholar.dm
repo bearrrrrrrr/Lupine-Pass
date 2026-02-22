@@ -249,6 +249,7 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/regression)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/convergence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stasis)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/temporal_revival)
 	
 	H.merctype = 14
 

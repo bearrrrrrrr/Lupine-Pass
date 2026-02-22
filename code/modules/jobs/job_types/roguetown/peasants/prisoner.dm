@@ -32,6 +32,7 @@
 	mask = /obj/item/clothing/mask/rogue/exoticsilkmask
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTLAW, TRAIT_GENERIC)
+	H.faction |= "Keep"
 
 /datum/job/roguetown/prisonerr/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
@@ -821,7 +822,7 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/regression)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/convergence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stasis)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/revive/naledi)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/temporal_revival)
 	backl = /obj/item/rogueweapon/woodstaff/naledi
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	gloves = /obj/item/clothing/gloves/roguetown/angle
