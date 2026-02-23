@@ -614,7 +614,7 @@
 			revert_cast()
 			return FALSE
 
-		if(target.blood_volume >= BLOOD_VOLUME_NORMAL)
+		if(target.blood_volume >= target.max_blood_volume)
 			to_chat(UH, span_warning("Their lyfeblood is at capacity. There is no need."))
 			revert_cast()
 			return FALSE
@@ -647,9 +647,9 @@
 		for(var/i in 1 to max_loops)
 			if(UH.blood_volume > (BLOOD_VOLUME_SURVIVE / 2))
 				if(do_after(UH, delay))
-					target.blood_volume = min((target.blood_volume + blood_vol_restore), BLOOD_VOLUME_NORMAL)
+					target.blood_volume = min((target.blood_volume + blood_vol_restore), target.max_blood_volume)
 					UH.blood_volume = max((UH.blood_volume - blood_price), 0)
-					if(target.blood_volume >= BLOOD_VOLUME_NORMAL && !user_informed)
+					if(target.blood_volume >= target.max_blood_volume && !user_informed)
 						to_chat(UH, span_info("They're at a healthy blood level, but I can keep going."))
 						user_informed = TRUE
 				else

@@ -122,8 +122,14 @@
 	C.cmode_music = 'sound/music/combat_gronn.ogg'
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 	C.mob_size = MOB_SIZE_SMALL//makes the mob small :)
+	ADD_TRAIT(C, TRAIT_CRITICAL_RESISTANCE, "Species")
+	C.max_blood_volume = BLOOD_VOLUME_MAXIMUM
+	C.blood_volume = BLOOD_VOLUME_MAXIMUM
 
 /datum/species/goblinp/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 	C.mob_size = MOB_SIZE_MEDIUM//makes the mob medium :)
+	REMOVE_TRAIT(C, TRAIT_CRITICAL_RESISTANCE, "Species")
+	C.max_blood_volume = BLOOD_VOLUME_NORMAL
+	C.blood_volume = BLOOD_VOLUME_NORMAL
